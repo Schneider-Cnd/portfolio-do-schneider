@@ -27,12 +27,12 @@
     text-decoration: none;
     padding: 50px 20px;
     display: block;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: 0.4s;
 }
 
 .navbar ul li a:hover {
-    background-color: rgb(159, 80, 80);
+    background-color: rgb(49, 46, 46);
     color: #3c2596;
     box-shadow: 0px 10px 20px rgb(0, 0, 0, 3);
     transform: translateY(-2px);
@@ -79,7 +79,7 @@
 } 
 
 
-#radio:checked ~ ./first (margin-left: 0%;)
-#radio:checked ~ ./first (margin-left: -25%;)
-#radio:checked ~ ./first (margin-left: -50%;)
-#radio:checked ~ ./first (margin-left: -75%;)
+#radio:checked1 ~ .first {margin-left: 0;}
+#radio:checked2 ~ .first {margin-left: -25%;}
+#radio:checked3 ~ .first {margin-left: -50%;}
+#radio:checked4 ~ .first {margin-left: -75%;}
