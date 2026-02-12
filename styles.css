@@ -79,7 +79,127 @@
 } 
 
 
-#radio:checked1 ~ .first {margin-left: 0;}
-#radio:checked2 ~ .first {margin-left: -25%;}
-#radio:checked3 ~ .first {margin-left: -50%;}
-#radio:checked4 ~ .first {margin-left: -75%;}
+.botao {
+    background-color: #292d88;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+    transition: 0.3s; /* animação suave */
+}
+
+/* Quando passar o mouse */
+.botao:hover {
+    background-color: #94a4fd;
+    transform: scale(1.1); /* aumenta o tamanho */
+}
+
+
+.imagem-circular {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; /* evita distorção */
+}
+.imagem-circular {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid #4A90E2; /* cor da borda */
+}
+
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+/* Imagem 2: Pula a primeira (25%) */
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+/* Imagem 3: pula as duas primeiras (50%) */
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+/* Imagem 4: pula as três primeiras (75%) */
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+
+
+/* ESTILO DOS BOTÕES MANUAIS (BOLINHAS) */
+.nav-manual {
+    position: absolute;
+    /* POSICIONAMENTO FIXO EM RELAÇÃO AO SLIDER */
+    width: 800px;
+    /* Mesma largura do slider */
+    margin-top: -40px;
+    /* Joga as bolinhas pra dentro da imagem */
+    display: flex;
+    justify-content: center;
+    /* Centraliza as bolinhas horizontalmente */
+}
+
+.manual-btn {
+    border: 2px solid white;
+    /* Borda branca para visibilidade */
+    padding: 5px;
+    /* Tamanho das bolinhas */
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    /* Espaçamento entre as bolinhas */
+    transition: 0.3s;
+    /* Suaviza a mudança de cor no hover */
+}
+
+.manual-btn:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* ESTILIZAÇÃO DO RODAPÉ DA PÁGINA */
+.rodape-principal {
+    background-color: #0b50856f;
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    margin-top: 50px;
+}
+.container-rodape{
+display: flex;
+justify-content:space-around;
+align-items: center;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+}
+.links-sociais a
+{
+color:#ffffff;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+transition: 0.3s;
+}
+.links-sociais a:hover{
+    color:blue;
+    text-shadow: 0 0 5px(255,255,255,0.2);
+}
+.rodape-inferior{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.info-copyright p{
+    text-align: center;
+    margin: 5px 0;
+}
