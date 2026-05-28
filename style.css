@@ -467,19 +467,19 @@ header.sticky .nav-bar {
 }
 
 .bar .html:before {
-    width: 70%;
-}
-
-.bar .css:before {
-    width: 60%;
-}
-
-.bar .javascript:before {
     width: 40%;
 }
 
+.bar .css:before {
+    width: 40%;
+}
+
+.bar .javascript:before {
+    width: 10%;
+}
+
 .bar .python:before {
-    width: 35%;
+    width: 1%;
 }
 
 .bar .django:before {
